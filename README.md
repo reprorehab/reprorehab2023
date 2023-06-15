@@ -1,4 +1,4 @@
-# ReproRehab 2022
+# ReproRehab 2023
 
 Educational Leadership Team 
 
@@ -23,7 +23,7 @@ Everyone: [W8-24](#weeks-8---24-everyone)
 
 ---
 
-> ### Week 1 (Oct. 10) - Intro to ReproRehab
+> ### Kick-off event (Sept. 29-30) - Intro to ReproRehab
 
 *Why do we need reproducible methods in rehabilitation? Overview and principles of reproducible science. (Slack, Github)*
 
