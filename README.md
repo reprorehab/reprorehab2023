@@ -15,11 +15,11 @@ This github repository has information and materials for the ReproRehab program.
 ## SCHEDULE
 ---
 
-Everyone: [W1](#week-1-oct-10---intro-to-reprorehab) | [W2](#week-2-oct-17---reproducible-data-managementorganization) | [W3](#week-3-oct-24---open-datasets)
+Everyone: [Unit 1](#kick-off-event-sept-29-30---intro-to-reprorehab) | [Unit 2](#unit-2---reproducible-data-managementorganization) | [Unit 3](#unit-3---open-datasets)
 
-Pod-specific: [W4-W7](#weeks-4-7-pod-specific-content)
+Pod-specific: [Units 4-7](#units-4-7-pod-specific-content)
 
-Everyone: [W8-24](#weeks-8---24-everyone)
+Everyone: [Units8-24](#units-8---24-everyone)
 
 ---
 
@@ -27,10 +27,10 @@ Everyone: [W8-24](#weeks-8---24-everyone)
 
 *Why do we need reproducible methods in rehabilitation? Overview and principles of reproducible science. (Slack, Github)*
 
-| Meetings | Date | Time | Location |
-| ------- | ----- | ---- | -------- |
-| ReproRehab All Hands | October 12 | 3p EST | Zoom |
-| Pods | Contact TA | --- | Zoom |
+| Meetings | Date | Location |
+| ------- | ----- |  -------- |
+| ReproRehab Kick-off | September 29-30 | USC Health Sciences Campus |
+| Pods | Contact TA |  Zoom |
 
 
 | Content | Video | 
@@ -40,7 +40,7 @@ Everyone: [W8-24](#weeks-8---24-everyone)
 | ReproRehab Housekeeping (8:49) | [![YouTube Views](https://img.shields.io/youtube/views/VbWHaAOizic?style=social)](https://youtu.be/VbWHaAOizic) [![YouTube Comments](https://img.shields.io/youtube/comments/VbWHaAOizic?style=social)](https://youtu.be/VbWHaAOizic) [![YouTube Likes](https://img.shields.io/youtube/likes/VbWHaAOizic?style=social)](https://youtu.be/VbWHaAOizic)|
 | Meet your 2022-2023 ReproRehab Leadership Team and TAs (23:53) | [![YouTube Views](https://img.shields.io/youtube/views/NIzDs0IbAxo?style=social)](https://youtu.be/NIzDs0IbAxo) [![YouTube Comments](https://img.shields.io/youtube/comments/NIzDs0IbAxo?style=social)](https://youtu.be/NIzDs0IbAxo) [![YouTube Likes](https://img.shields.io/youtube/likes/NIzDs0IbAxo?style=social)](https://youtu.be/NIzDs0IbAxo)|
 
-> ### Week 2 (Oct 17) - Reproducible Data Management/Organization 
+> ### Unit 2 - Reproducible Data Management/Organization 
 *Basics of data organization, file formatting, naming for machine-readable data, meta- data. How to approach research questions with reproducibility in mind.*
 
 | Meetings | Date | Time | Location |
@@ -55,7 +55,7 @@ Everyone: [W8-24](#weeks-8---24-everyone)
 | DataLad Introduction (optional but highly recommended) (27:15) | [![YouTube Views](https://img.shields.io/youtube/views/40ZcGp2vHXk?style=social)](https://www.youtube.com/watch?v=40ZcGp2vHXk) [![YouTube Comments](https://img.shields.io/youtube/comments/40ZcGp2vHXk?style=social)](https://www.youtube.com/watch?v=40ZcGp2vHXk) [![YouTube Likes](https://img.shields.io/youtube/likes/40ZcGp2vHXk?style=social)](https://www.youtube.com/watch?v=40ZcGp2vHXk)|
 
 
-> ### Week 3 (Oct 24) - Open Datasets
+> ### Unit 3 - Open Datasets
 *FAIR data principles, open-source datasets, data transfer agreements, and ReproRehabDB (our database for courses/open datasets).*
 
 | Meetings | Date | Time | Location |
@@ -64,15 +64,15 @@ Everyone: [W8-24](#weeks-8---24-everyone)
 
 | Content | Video | 
 | -- | ----- | 
-| Introduction to Week 3 (3:26) | [![YouTube Views](https://img.shields.io/youtube/views/ODFbVlIKOas?style=social)](https://youtu.be/ODFbVlIKOas) [![YouTube Comments](https://img.shields.io/youtube/comments/ODFbVlIKOas?style=social)](https://youtu.be/ODFbVlIKOas) [![YouTube Likes](https://img.shields.io/youtube/likes/ODFbVlIKOas?style=social)](https://youtu.be/ODFbVlIKOas)|
-| Week 3: Introduction to FAIR Data (51:14) | [![YouTube Views](https://img.shields.io/youtube/views/keH4Tc6mXMk?style=social)](https://youtu.be/keH4Tc6mXMk) [![YouTube Comments](https://img.shields.io/youtube/comments/keH4Tc6mXMk?style=social)](https://youtu.be/keH4Tc6mXMk) [![YouTube Likes](https://img.shields.io/youtube/likes/keH4Tc6mXMk?style=social)](https://youtu.be/keH4Tc6mXMk)|
+| Introduction to Unit 3 (3:26) | [![YouTube Views](https://img.shields.io/youtube/views/ODFbVlIKOas?style=social)](https://youtu.be/ODFbVlIKOas) [![YouTube Comments](https://img.shields.io/youtube/comments/ODFbVlIKOas?style=social)](https://youtu.be/ODFbVlIKOas) [![YouTube Likes](https://img.shields.io/youtube/likes/ODFbVlIKOas?style=social)](https://youtu.be/ODFbVlIKOas)|
+| Unit 3: Introduction to FAIR Data (51:14) | [![YouTube Views](https://img.shields.io/youtube/views/keH4Tc6mXMk?style=social)](https://youtu.be/keH4Tc6mXMk) [![YouTube Comments](https://img.shields.io/youtube/comments/keH4Tc6mXMk?style=social)](https://youtu.be/keH4Tc6mXMk) [![YouTube Likes](https://img.shields.io/youtube/likes/keH4Tc6mXMk?style=social)](https://youtu.be/keH4Tc6mXMk)|
 | NIH Data Sharing Policy (1:27:37) | [![YouTube Views](https://img.shields.io/youtube/views/CgUpwkngj3g?style=social)](https://www.youtube.com/watch?v=CgUpwkngj3g) [![YouTube Comments](https://img.shields.io/youtube/comments/CgUpwkngj3g?style=social)](https://www.youtube.com/watch?v=CgUpwkngj3g) [![YouTube Likes](https://img.shields.io/youtube/likes/CgUpwkngj3g?style=social)](https://www.youtube.com/watch?v=CgUpwkngj3g)|
-| Week 3: Open Data and Data Sharing in Rehabilitation (Part 2) (25:58) | [![YouTube Views](https://img.shields.io/youtube/views/ujVK5o_Wi0A?style=social)](https://youtu.be/ujVK5o_Wi0A) [![YouTube Comments](https://img.shields.io/youtube/comments/ujVK5o_Wi0A?style=social)](https://youtu.be/ujVK5o_Wi0A) [![YouTube Likes](https://img.shields.io/youtube/likes/ujVK5o_Wi0A?style=social)](https://youtu.be/ujVK5o_Wi0A)|
-| Week 3: How to use ReproRehabDB (3:38) | [![YouTube Views](https://img.shields.io/youtube/views/_yVoIpScKK0?style=social)](https://youtu.be/_yVoIpScKK0) [![YouTube Comments](https://img.shields.io/youtube/comments/_yVoIpScKK0?style=social)](https://youtu.be/_yVoIpScKK0) [![YouTube Likes](https://img.shields.io/youtube/likes/_yVoIpScKK0?style=social)](https://youtu.be/_yVoIpScKK0)|
+| Unit 3: Open Data and Data Sharing in Rehabilitation (Part 2) (25:58) | [![YouTube Views](https://img.shields.io/youtube/views/ujVK5o_Wi0A?style=social)](https://youtu.be/ujVK5o_Wi0A) [![YouTube Comments](https://img.shields.io/youtube/comments/ujVK5o_Wi0A?style=social)](https://youtu.be/ujVK5o_Wi0A) [![YouTube Likes](https://img.shields.io/youtube/likes/ujVK5o_Wi0A?style=social)](https://youtu.be/ujVK5o_Wi0A)|
+| Unit 3: How to use ReproRehabDB (3:38) | [![YouTube Views](https://img.shields.io/youtube/views/_yVoIpScKK0?style=social)](https://youtu.be/_yVoIpScKK0) [![YouTube Comments](https://img.shields.io/youtube/comments/_yVoIpScKK0?style=social)](https://youtu.be/_yVoIpScKK0) [![YouTube Likes](https://img.shields.io/youtube/likes/_yVoIpScKK0?style=social)](https://youtu.be/_yVoIpScKK0)|
 
 ---
 
-> ### WEEKS 4-7: POD-SPECIFIC CONTENT
+> ### Units 4-7: POD-SPECIFIC CONTENT
 *For these four weeks, pods will select a curriculum based on learner’s needs.*
 
 *ReproRehab will provide introductory and/or intermediate course curricula with asynchronous videos and hands-on exercises in Matlab, R, and/or python, as well as on data archiving, data management, and more (and pods are welcome to chose course content from outside sources as well).*
@@ -89,37 +89,36 @@ Everyone: [W8-24](#weeks-8---24-everyone)
 ABCD-ReproNim Machine Learning Playlist | [![YouTube Playlist](https://img.shields.io/badge/-YouTube-red)](https://www.youtube.com/playlist?list=PLV4PTzGI0GjWxSXTSvI6rs_pS5Cf0CD0m) |
 
 
-> ### Week 4 (Oct 31) 
+> ### Unit 4 
 
 | Meetings | Date | Time | Location |
 | ------- | ----- | ---- | -------- |
 | Pods | Contact TA | --- | Zoom |
 
-> ### Week 5 (Nov 7)
+> ### Unit 5
 
 | Meetings | Date | Time | Location |
 | ------- | ----- | ---- | -------- |
 | Pods | Contact TA | --- | Zoom |
 
-> ### Week 6 (Nov 14)
+> ### Unit 6
 
 | Meetings | Date | Time | Location |
 | ------- | ----- | ---- | -------- |
-| NeuroRehab Social (SfN) | November 14 | 6:30p - 8:30p | Social Tap |
 | Pods | Contact TA | --- | Zoom |
 
 > ### *Nov 21 - No class, Thanksgiving Break*
 
-> ### Week 7 (Nov 28)
+> ### Unit 7 
 
 | Meetings | Date | Time | Location |
 | ------- | ----- | ---- | -------- |
 | Pods | Contact TA | --- | Zoom |
 ---
 
-### **WEEKS 8 - 24: EVERYONE**
+### **Units 8 - 24: EVERYONE**
 
-> ### Week 8 (Dec 5) - Launching into self-guided learning
+> ### Unit 8 - Launching into self-guided learning
 
 *What types of online learning opportunities are available to rehabilitation researchers?*
 
@@ -130,9 +129,9 @@ ABCD-ReproNim Machine Learning Playlist | [![YouTube Playlist](https://img.shiel
 
 |  Content  | Playlist | 
 | -- | ----- | 
-| Week 8: Where do we go from here? From the bootcamp to self guided learning | [![YouTube Playlist](https://img.shields.io/badge/-YouTube-red)](https://www.youtube.com/watch?v=Du70pdIOmSY) |
+| Unit 8: Where do we go from here? From the bootcamp to self guided learning | [![YouTube Playlist](https://img.shields.io/badge/-YouTube-red)](https://www.youtube.com/watch?v=Du70pdIOmSY) |
 
-> ### Weeks 9-24 (Dec 12 - Apr 3) - 4-MONTH SELF-GUIDED PROGRAM 
+> ### Units 9-24 (Nov 10 - Apr 8) - 4-MONTH SELF-GUIDED PROGRAM 
 
 *Learning from online course materials and applying it to your own research; ASNR Meet-up*
 
@@ -149,7 +148,7 @@ If students have questions, post in appropriate Slack channel.
 
 TAs and ELT have office hours. 
 
-> ### Week 24 (Apr 3) - Follow-up and evaluations 
+> ### Unit 24 (Apr 5) - Follow-up and evaluations 
 
 *Presentations by Learners and TAs*
 
