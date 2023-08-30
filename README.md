@@ -53,6 +53,10 @@ Everyone: [Units8-24](#units-8---24-everyone)
 | Introduction to Data Analysis (39:42) | [![YouTube Views](https://img.shields.io/youtube/views/13IuiwPAPUY?style=social)](https://youtu.be/13IuiwPAPUY) [![YouTube Comments](https://img.shields.io/youtube/comments/13IuiwPAPUY?style=social)](https://youtu.be/13IuiwPAPUY) [![YouTube Likes](https://img.shields.io/youtube/likes/13IuiwPAPUY?style=social)](https://youtu.be/13IuiwPAPUY)|
 | Data Standardization: A (very) short introduction (26:22) | [![YouTube Views](https://img.shields.io/youtube/views/pPL_sASvKbQ?style=social)](https://youtu.be/pPL_sASvKbQ) [![YouTube Comments](https://img.shields.io/youtube/comments/pPL_sASvKbQ?style=social)](https://youtu.be/pPL_sASvKbQ) [![YouTube Likes](https://img.shields.io/youtube/likes/pPL_sASvKbQ?style=social)](https://youtu.be/pPL_sASvKbQ)|
 | DataLad Introduction (optional but highly recommended) (27:15) | [![YouTube Views](https://img.shields.io/youtube/views/40ZcGp2vHXk?style=social)](https://www.youtube.com/watch?v=40ZcGp2vHXk) [![YouTube Comments](https://img.shields.io/youtube/comments/40ZcGp2vHXk?style=social)](https://www.youtube.com/watch?v=40ZcGp2vHXk) [![YouTube Likes](https://img.shields.io/youtube/likes/40ZcGp2vHXk?style=social)](https://www.youtube.com/watch?v=40ZcGp2vHXk)|
+| GitHub Basics Tutorial (8:41) | [![YouTube Views](https://img.shields.io/youtube/views/sfFESwAMbUs?si=Ps3SBvR_cFxW-vD7?style=social)](https://youtu.be/sfFESwAMbUs?si=Ps3SBvR_cFxW-vD7) [![YouTube Comments](https://img.shields.io/youtube/comments/sfFESwAMbUs?si=Ps3SBvR_cFxW-vD7?style=social)](https://youtu.be/sfFESwAMbUs?si=Ps3SBvR_cFxW-vD7) [![YouTube Likes](https://img.shields.io/youtube/likes/sfFESwAMbUs?si=Ps3SBvR_cFxW-vD7?style=social)](https://youtu.be/sfFESwAMbUs?si=Ps3SBvR_cFxW-vD7)| 
+ 
+[Helpful Github Resource](https://git-for-librarians.netlify.app)
+
 
 
 > ### Unit 3 - Open Datasets
