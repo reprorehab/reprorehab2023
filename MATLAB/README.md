@@ -1,3 +1,5 @@
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=reprorehab/reprorehab2023&file=https://github.com/reprorehab/reprorehab2023/tree/main/MATLAB)
+
 # Objective
 The objective of the ReproRehab MATLAB curriculum is to help learners gain proficiency creating rigorous, reproducible data analysis pipelines. To this end, you will use a combination of video lectures, online tutorials, and hands-on activities to decipher a pre-existing data analysis pipeline and develop your own analysis scripts for an open-source data set comprised of kinematic, kinetic, and EMG data. As you work through the content, feel free to post comments and questions on ReproRehab Slack or reach out to the Teaching Assistants if you encounter any major challenges along the way.
 
