@@ -3,39 +3,46 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import numpy as np
 
-
+# Specificy plot parameters
 mpl.rcParams.update(
-    {"font.size": 25, "text.color": "lavender", "font.family": "Palatino Linotype"}
+    {"font.size": 20, "text.color": "white", "font.family": "Palatino Linotype"}
+)
+plt.style.use("default")
+scatter_size = 25
+marker = "o"
+box_plot_width = 0.75
+box_plot_width_diff = 0.45
+
+# Generate Data
+numb_data_points = 53
+pre = np.random.uniform(low=0, high=55, size=numb_data_points)
+post = np.random.uniform(low=75, high=100, size=numb_data_points)
+data = [pre, post]
+post_minus_pre = [post - pre]
+data_labels = [
+    "Pre\nReproRehab",
+    "Post\nReproRehab",
+]
+color_codes = [[0.1373, 0.3255, 0.4980], [0.5961, 0.3098, 0.8706]]  # Pre, Post
+diff_color = [[0.9686, 0.4039, 0]]
+
+# Create Figure
+fig = plt.figure()
+shapeRowVal = 1
+shapeColVal = 3
+ax_pre_post = plt.subplot2grid(shape=(shapeRowVal, shapeColVal), loc=(0, 0), colspan=2)
+ax_diff = plt.subplot2grid(shape=(shapeRowVal, shapeColVal), loc=(0, 2), colspan=2)
+
+
+# Create box plots
+b_plot_diff = ax_diff.boxplot(
+    x=post_minus_pre,
+    widths=box_plot_width_diff,
+    patch_artist=True,
+    showfliers=False,
 )
 
-numb_data_points = 25
-
-y_1 = numpy.random.normal(28, 8, numb_data_points)  # undergrads
-y_2 = numpy.random.normal(12, 5, numb_data_points)  # grad
-y_3 = numpy.random.normal(5, 3, numb_data_points)  # non tunured faculty
-y_4 = numpy.random.normal(18, 12, numb_data_points)  # tenured faculty
-
-data = [y_1, y_2, y_3, y_4]
-
-data_labels = [
-    "Undergrad\nStudents",
-    "Graduate\nStudents",
-    "Non-Tenured\nFaculty",
-    "Tenured\nFaculty",
-]
-
-title = "Alcoholic beverages consumed in the past month"
-
-y_label = "Number of drinks"
-
-scatter_size = 200
-
-box_plot_width = 0.75
-fig_size = [12, 10]
-
-axs = plt.subplot()
-
-b_plot = plt.boxplot(
+b_plot_post_pre = ax_pre_post.boxplot(
     x=data,
     labels=data_labels,
     widths=box_plot_width,
@@ -43,60 +50,61 @@ b_plot = plt.boxplot(
     showfliers=False,
 )
 
-color_codes = ["#376101", "#89ce00", "#e6308a", "#8f144e"]
 
-for patch, color_code in zip(b_plot["boxes"], color_codes):
-    patch.set_facecolor(color_code)
+# Adjust boxplot colors
+def configure_box_plot_style(box_plot, face_colors):
+    for patch, color_code, medians in zip(
+        box_plot["boxes"], face_colors, box_plot["medians"]
+    ):
+        patch.set_facecolor(color_code)
+        patch.set_alpha(0.5)
+        medians.set_color(color_code)
 
-jitter_width = box_plot_width / 3
 
-for idx, y_data in enumerate(data):
-    x_values = np.ones(len(y_data)) * (idx + 1) + np.random.uniform(
-        -jitter_width, jitter_width, len(y_data)
-    )
+configure_box_plot_style(b_plot_post_pre, color_codes)
+configure_box_plot_style(b_plot_diff, diff_color)
 
-    if idx == 3:
-        for y_idx in range(len(y_data)):
-            if y_data[y_idx] >= 13:
-                split_marker = "D"
-            else:
-                split_marker = "o"
 
-            axs.scatter(
-                x_values[y_idx],
-                y_data[y_idx],
-                color=color_codes[idx],
-                edgecolors="black",
-                linewidths=1.75,
-                s=scatter_size,
-                zorder=20,
-                marker=split_marker,
-            )
-
-    else:
-        axs.scatter(
+# Create Scatter plots
+def plot_jittered_scatter_points(ax, y_data, jitter_width, colors):
+    for idx, y_data in enumerate(y_data):
+        x_values = np.ones(len(y_data)) * (idx + 1) + np.random.uniform(
+            -jitter_width, jitter_width, len(y_data)
+        )
+        ax.scatter(
             x_values,
             y_data,
-            color=color_codes[idx],
+            color=colors[idx],
             edgecolors="black",
             linewidths=1.75,
             s=scatter_size,
             zorder=20,
         )
 
-axs.scatter(
-    [],
-    [],
-    marker="D",
-    color=color_codes[3],
-    s=scatter_size,
-    label="Doesn't show up on monday",
-)
 
-plt.grid(alpha=0.5)
-plt.legend()
-axs.set_title(title)
-axs.set_ylabel(y_label)
-fig = plt.gcf()
-fig.set_size_inches(fig_size)
+jitter_width = box_plot_width / 3
+plot_jittered_scatter_points(ax_pre_post, data, jitter_width, color_codes)
+plot_jittered_scatter_points(ax_diff, post_minus_pre, jitter_width, diff_color)
 
+
+# Finalize figures
+ax_pre_post.grid(alpha=0.5)
+ax_pre_post.set_ylim(-2, 102)
+ax_pre_post.spines[["top", "right"]].set_visible(False)
+ax_pre_post.set_ylabel("Programming confidence (%)")
+
+ax_diff.grid(alpha=0.5)
+ax_diff.set_ylim(20, 95)
+ax_diff.spines[["top", "right"]].set_visible(False)
+
+ax_diff.set_ylabel("Improvement")
+ax_diff.set_xticks([])
+y_labels = [t._text for t in ax_diff.get_yticklabels()[1:-1]]
+y_values = [v._y for v in ax_diff.get_yticklabels()]
+ax_diff.set_yticks(ticks=y_values, labels=["Less"] + y_labels + ["More"])
+
+fig.tight_layout()
+# plt.subplots_adjust(
+#     left=0.06, bottom=0.056, right=1, top=0.95, wspace=0.0, hspace=0.402
+# )
+plt.show()
