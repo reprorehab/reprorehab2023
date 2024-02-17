@@ -1,28 +1,28 @@
-import numpy
+
+# import libraries
 import matplotlib.pyplot as plt
-import matplotlib as mpl
 import numpy as np
+
+import matplotlib as mpl
 
 # Specificy plot parameters
 mpl.rcParams.update(
-    {"font.size": 20, "text.color": "white", "font.family": "Palatino Linotype"}
+    {"font.size": 20, "text.color": "white", "font.family": "Times New Roman"}
 )
 plt.style.use("default")
-scatter_size = 25
-marker = "o"
-box_plot_width = 0.75
-box_plot_width_diff = 0.45
 
 # Generate Data
 numb_data_points = 53
 pre = np.random.uniform(low=0, high=55, size=numb_data_points)
 post = np.random.uniform(low=75, high=100, size=numb_data_points)
 data = [pre, post]
-post_minus_pre = [post - pre]
+post_minus_pre_diff = [post - pre]
+
 data_labels = [
     "Pre\nReproRehab",
     "Post\nReproRehab",
 ]
+
 color_codes = [[0.1373, 0.3255, 0.4980], [0.5961, 0.3098, 0.8706]]  # Pre, Post
 diff_color = [[0.9686, 0.4039, 0]]
 
@@ -30,16 +30,19 @@ diff_color = [[0.9686, 0.4039, 0]]
 fig = plt.figure()
 shapeRowVal = 1
 shapeColVal = 3
+
 ax_pre_post = plt.subplot2grid(shape=(shapeRowVal, shapeColVal), loc=(0, 0), colspan=2)
 ax_diff = plt.subplot2grid(shape=(shapeRowVal, shapeColVal), loc=(0, 2), colspan=2)
 
 
 # Create box plots
+box_plot_width = 0.75
+box_plot_width_diff = 0.45
+
 b_plot_diff = ax_diff.boxplot(
-    x=post_minus_pre,
+    x=post_minus_pre_diff,
     widths=box_plot_width_diff,
     patch_artist=True,
-    showfliers=False,
 )
 
 b_plot_post_pre = ax_pre_post.boxplot(
@@ -47,7 +50,6 @@ b_plot_post_pre = ax_pre_post.boxplot(
     labels=data_labels,
     widths=box_plot_width,
     patch_artist=True,
-    showfliers=False,
 )
 
 
@@ -81,10 +83,11 @@ def plot_jittered_scatter_points(ax, y_data, jitter_width, colors):
             zorder=20,
         )
 
-
+scatter_size = 25
 jitter_width = box_plot_width / 3
+
 plot_jittered_scatter_points(ax_pre_post, data, jitter_width, color_codes)
-plot_jittered_scatter_points(ax_diff, post_minus_pre, jitter_width, diff_color)
+plot_jittered_scatter_points(ax_diff, post_minus_pre_diff, jitter_width, diff_color)
 
 
 # Finalize figures
@@ -96,15 +99,14 @@ ax_pre_post.set_ylabel("Programming confidence (%)")
 ax_diff.grid(alpha=0.5)
 ax_diff.set_ylim(20, 95)
 ax_diff.spines[["top", "right"]].set_visible(False)
-
 ax_diff.set_ylabel("Improvement")
 ax_diff.set_xticks([])
+
+# change y labels
 y_labels = [t._text for t in ax_diff.get_yticklabels()[1:-1]]
 y_values = [v._y for v in ax_diff.get_yticklabels()]
 ax_diff.set_yticks(ticks=y_values, labels=["Less"] + y_labels + ["More"])
 
+
 fig.tight_layout()
-# plt.subplots_adjust(
-#     left=0.06, bottom=0.056, right=1, top=0.95, wspace=0.0, hspace=0.402
-# )
 plt.show()
